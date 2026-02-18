@@ -46,11 +46,10 @@ export default function RootLayout({
               Professional Final Year Project Development Services.
             </p>
             <p className="text-gray-500 text-xs mt-4">
-              © {new Date().getFullYear()} FYP Solutions. All Rights Reserved.
+              &copy; {new Date().getFullYear()} FYP Solutions. All Rights Reserved.
             </p>
           </div>
         </footer>
-
       </body>
     </html>
   );
