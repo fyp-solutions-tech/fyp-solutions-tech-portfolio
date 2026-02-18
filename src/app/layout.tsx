@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/ui/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <header>
+          <Navbar />
+        </header>
+
+        {/* ✅ Children inside main */}
+        <main className="grow">
+          {children}
+        </main>
+        {/* Simple Footer Section */}
+        <footer className="bg-base-200 border-t border-base-300">
+          <div className="max-w-7xl mx-auto px-6 lg:px-20 py-8 text-center">
+            <h2 className="text-lg font-semibold text-orange-500">
+              FYP Solutions
+            </h2>
+            <p className="text-gray-400 text-sm mt-2">
+              Professional Final Year Project Development Services.
+            </p>
+            <p className="text-gray-500 text-xs mt-4">
+              © {new Date().getFullYear()} FYP Solutions. All Rights Reserved.
+            </p>
+          </div>
+        </footer>
+
       </body>
     </html>
   );
