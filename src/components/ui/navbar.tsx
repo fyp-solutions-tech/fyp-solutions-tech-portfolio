@@ -12,18 +12,18 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex gap-10 text-gray-300 font-medium">
-            <a href="#services" className="hover:text-orange-500 transition">
+            <Link href="/services" className="hover:text-orange-500 transition">
               Services
-            </a>
-            <a href="#about" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="/about" className="hover:text-orange-500 transition">
               About
-            </a>
+            </Link>
             <Link href="/projects" className="hover:text-orange-500 transition">
               Projects
             </Link>
-            <a href="#contact" className="hover:text-orange-500 transition">
+            <Link href="/contact" className="hover:text-orange-500 transition">
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className="flex-none ml-6">
