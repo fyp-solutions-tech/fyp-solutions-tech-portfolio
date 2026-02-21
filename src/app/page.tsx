@@ -9,7 +9,7 @@ export default function Home() {
           {/* Text */}
           <div className="flex-1 text-center lg:text-left">
             <p className="text-gray-400 mb-3">
-              Professional Development Services
+              Professional Development Services 
             </p>
 
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -53,14 +53,14 @@ export default function Home() {
           </div>
 
           {/* Image */}
-          <div className="flex-1 flex justify-center">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-base-200 overflow-hidden shadow-lg">
+          <div className="flex-1 flex justify-center ">
+            <div className="hidden md:block md:size-150">
               <Image
-                src="/image.png"
-                width={300}
-                height={300}
+                src="/showcase_img.png"
+                width={1000}
+                height={1000}
                 alt="Team Member"
-                className="w-full h-full object-cover"
+                className=" object-cover"
               />
             </div>
           </div>
@@ -68,73 +68,201 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section id="services" className="px-6 lg:px-20 py-16">
-        <h2 className="text-3xl font-bold text-center text-orange-500 mb-12">
-          Our Services
-        </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="card bg-base-200 shadow-xl">
-            <div className="card-body">
-              <h2 className="card-title">Web Development</h2>
-              <p>MERN stack & modern responsive websites.</p>
-            </div>
+      {/* Services Section */}
+      <section className="py-16 px-6">
+        <div className="relative z-10 text-center px-6 mb-15">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Our Professional Services
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto ">
+            Web Development, Machine Learning Solutions, and Professional IT
+            Consultancy
+          </p>
+        </div>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          {/* Web Development */}
+          <div className="bg-orange-500 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Web Development Services
+            </h2>
+            <p className="mb-4 leading-relaxed">
+              We design and develop modern, scalable, and SEO-optimized websites
+              using technologies like React.js and Node.js.
+            </p>
+            <ul className="space-y-2 text-sm">
+              <li>✔ Responsive Website Development</li>
+              <li>✔ Custom Web Applications</li>
+              <li>✔ SEO-Friendly Architecture</li>
+              <li>✔ Backend & Database Integration</li>
+              <li>✔ Performance Optimization</li>
+            </ul>
           </div>
 
-          <div className="card bg-base-200 shadow-xl">
-            <div className="card-body">
-              <h2 className="card-title">Mobile Apps</h2>
-              <p>React Native Android & iOS applications.</p>
-            </div>
+          {/* Machine Learning */}
+          <div className="bg-orange-500 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Machine Learning Solutions
+            </h2>
+            <p className="mb-4 leading-relaxed">
+              We develop intelligent systems powered by data, including
+              predictive models and AI-based solutions.
+            </p>
+            <ul className="space-y-2 text-sm">
+              <li>✔ Predictive Modeling</li>
+              <li>✔ Data Analysis & Visualization</li>
+              <li>✔ AI-Based Academic Projects</li>
+              <li>✔ Image & Text Classification</li>
+              <li>✔ Automation Solutions</li>
+            </ul>
           </div>
 
-          <div className="card bg-base-200 shadow-xl">
-            <div className="card-body">
-              <h2 className="card-title">AI Projects</h2>
-              <p>Machine learning & intelligent systems.</p>
-            </div>
+          {/* Consultancy */}
+          <div className="bg-orange-500 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Professional IT Consultancy
+            </h2>
+            <p className="mb-4 leading-relaxed">
+              Strategic guidance to help you select the right technology stack
+              and build scalable, cost-effective solutions.
+            </p>
+            <ul className="space-y-2 text-sm">
+              <li>✔ Technology Selection</li>
+              <li>✔ System Architecture Planning</li>
+              <li>✔ Project Feasibility Analysis</li>
+              <li>✔ Academic Project Guidance</li>
+              <li>✔ Digital Transformation Strategy</li>
+            </ul>
           </div>
         </div>
       </section>
 
       {/* ABOUT SECTION */}
-      <section id="about" className="px-6 lg:px-20 py-16 bg-base-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-orange-500 mb-6">
-            About FYP Solutions
-          </h2>
-          <p className="text-gray-300">
-            We are dedicated to helping students complete professional and
-            industry-standard Final Year Projects with complete documentation,
-            source code, and deployment guidance.
+      {/* Hero Section */}
+      <section className="bg-[] text-white py-5 px-2   bg-base-100 ">
+        <div className="max-w-6xl mx-auto text-center ">
+          <h1 className="text-orange-500 text-4xl md:text-5xl font-bold mb-2">
+            About Us
+          </h1>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            Turning innovative ideas into impactful digital realities through
+            professional Final Year Project development and modern IT solutions.
           </p>
+        </div>
+      </section>
+      {/* Services Section */}
+      <section className="py-16 px-6  bg-base-100  text-[#aaa]">
+        <div className="max-w-6xl mx-auto text-center mb-12">
+          <h2 className="text-[#ffffff] text-3xl font-bold mb-4">What We Do</h2>
+          <p className="max-w-2xl mx-auto ">
+            Comprehensive development services tailored for academic and
+            business success.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="bg-orange-500 text-[#ffffff] rounded-2xl shadow-lg p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Final Year Project Development
+            </h3>
+            <p className="leading-relaxed">
+              Complete FYP solutions including research documentation,
+              development, deployment guidance, and presentation preparation.
+            </p>
+          </div>
+
+          <div className="bg-orange-500 text-[#ffffff] rounded-2xl shadow-lg p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Web Development Services
+            </h3>
+            <p className="leading-relaxed">
+              Responsive, fast-loading, and SEO-optimized websites built using
+              modern technologies like React.js.
+            </p>
+          </div>
+
+          <div className="bg-orange-500 text-[#ffffff] rounded-2xl shadow-lg p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Machine Learning Solutions
+            </h3>
+            <p className="leading-relaxed">
+              Advanced Machine Learning and AI-based project development
+              including data analysis, predictive modeling, intelligent systems,
+              and real-world problem-solving using Python, TensorFlow, and
+              modern ML frameworks.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="px-6 lg:px-20 py-16">
-        <h2 className="text-3xl font-bold text-center text-orange-500 mb-8">
-          Contact Us
-        </h2>
+      <section className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 py-16">
+        <div className="w-full max-w-xl align-text center">
+          {/* Form Card */}
+          <div className="card bg-base-100 shadow-2xl rounded-3xl p-6 sm:p-10 border border-zinc-700">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+              Contact Us
+            </h2>
 
-        <div className="max-w-xl mx-auto">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="input input-bordered w-full mb-4 bg-base-200"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="input input-bordered w-full mb-4 bg-base-200"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="textarea textarea-bordered w-full mb-4 bg-base-200"
-          ></textarea>
-          <button className="btn bg-orange-500 border-none hover:bg-orange-600 w-full">
-            Send Message
-          </button>
+            <form className="space-y-6">
+              {/* Name Fields */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text mb-2">First Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    className="input input-bordered w-full focus:input-primary"
+                    required
+                  />
+                </div>
+
+                <div className="form-control w-full">
+                  <label className="label">
+                    <span className="label-text mb-2">Last Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    className="input input-bordered w-full focus:input-primary"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="form-control w-full">
+                <label className="label">
+                  <span className="label-text mb-2">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter Your E-mail"
+                  className="input input-bordered w-full focus:input-primary"
+                  required
+                />
+              </div>
+
+              {/* Message */}
+              <div className="form-control w-full">
+                <label className="label">
+                  <span className="label-text mb-2">Message</span>
+                </label>
+                <textarea
+                  className="textarea textarea-bordered w-full h-28 sm:h-32"
+                  placeholder="Type Here"
+                  required
+                ></textarea>
+              </div>
+
+              {/* Button */}
+              <button className="btn w-full text-lg font-semibold rounded-lg border-none bg-orange-500 hover:bg-orange-600 shadow-lg transition-transform duration-200 hover:scale-[1.02]">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

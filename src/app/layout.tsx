@@ -48,8 +48,8 @@ export default function RootLayout({
             <p className="text-gray-500 text-xs mt-4">
               © {new Date().getFullYear()} FYP Solutions. All Rights Reserved.
             </p>
-          </div>
-        </footer>
+      </div>
+</footer>
         
       </body>
     </html>
