@@ -1,7 +1,7 @@
 const Page = () => {
     return (
         <main className="min-h-screen bg-linear-to-br from-base-200 via-base-100 to-base-200 flex items-center justify-center px-6 py-20">
-            <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center">
+            <section className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center">
 
                 {/* Left Section */}
                 <div className="space-y-8">
@@ -77,7 +77,7 @@ const Page = () => {
                         </button>
                     </form>
                 </div>
-            </div>
+            </section>
         </main>
     )
 }

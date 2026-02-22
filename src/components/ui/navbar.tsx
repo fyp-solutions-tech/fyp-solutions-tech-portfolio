@@ -2,38 +2,88 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 bg-neutral/95 backdrop-blur-md border-b border-base-300">
-      <div className="max-w-7xl mx-auto px-6 lg:px-20">
-        <div className="navbar h-20">
-          <div className="flex-1">
-            <h1 className="text-2xl font-bold tracking-wide">
-              FYP<span className="text-orange-500">Solutions</span>
-            </h1>
-          </div>
+    <div className="navbar bg-base-100 shadow-sm px-4">
 
-          <div className="hidden lg:flex gap-10 text-gray-300 font-medium">
+      {/* LEFT SIDE */}
+      <div className="navbar-start">
+
+        {/* Mobile Dropdown */}
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Projects</a></li>
+          </ul>
+        </div>
+
+        {/* Logo */}
+        <a className="btn btn-ghost text-xl font-bold">
+          FYP<span className="text-orange-500">Solutions</span>
+        </a>
+
+      </div>
+
+      {/* CENTER - Desktop Menu */}
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1 gap-4">
+
+          <li>
+            <Link href="/" className="hover:text-orange-500 transition">
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link href="about" className="hover:text-orange-500 transition">
+              About
+            </Link>
+          </li>
+
+          <li>
             <Link href="/services" className="hover:text-orange-500 transition">
               Services
             </Link>
-            <Link href="/about" className="hover:text-orange-500 transition">
-              About
-            </Link>
-            <Link href="/projects" className="hover:text-orange-500 transition">
+          </li>
+
+          <li>
+            <Link
+              href="/projects"
+              className="hover:text-orange-500 transition"
+            >
               Projects
             </Link>
-            <Link href="/contact" className="hover:text-orange-500 transition">
-              Contact
-            </Link>
-          </div>
-
-          <div className="flex-none ml-6">
-            <button className="btn bg-orange-500 border-none hover:bg-orange-600 px-6">
-              Hire Us
-            </button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </nav>
+
+      {/* RIGHT SIDE */}
+      <div className="navbar-end">
+        <Link href="/contact" className="btn bg-orange-500 border-none hover:bg-orange-600 px-4 text-white">
+          Contact Us
+        </Link>
+      </div>
+
+    </div>
   );
 };
 
