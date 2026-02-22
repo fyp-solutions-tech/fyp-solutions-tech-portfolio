@@ -70,7 +70,7 @@ From debugging nightmare code to delivering **full-stack web apps, mobile applic
 
 ## 📸 Live Preview
 
-![Hero Section](https://fyp-solutions-tech.vercel.app/og-image.png) <!-- Replace with actual OG if available, or remove -->
+![Hero Section](https://github.com/user-attachments/assets/c87ff44a-2bf1-45a2-8ab5-92ba2ee37e13)<!-- Replace with actual OG if available, or remove -->
 
 *Modern, clean, and lightning-fast landing page designed to convert student visitors into confident clients.*
 
