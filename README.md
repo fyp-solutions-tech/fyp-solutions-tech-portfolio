@@ -76,18 +76,3 @@ From debugging nightmare code to delivering **full-stack web apps, mobile applic
 
 ---
 
-## 🏁 Getting Started (Local Development)
-
-```bash
-# Clone the repository
-git clone https://github.com/fyp-solutions-tech/fyp-solutions-tech-portfolio.git
-
-# Navigate to project
-cd fyp-solutions-tech-portfolio
-
-# Install dependencies (pnpm recommended)
-pnpm install
-
-# Run development server
-pnpm dev
-```
